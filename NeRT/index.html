@@ -19,11 +19,12 @@
     <meta property="og:url" content="https://jonbarron.info/mipnerf360/"/>
     <meta property="og:title" content="NeRT: Implicit Neural Representations for General
     Unsupervised Turbulence Mitigation" />
-    <meta property="og:description" content="Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on 'unbounded' scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub 'mip-NeRF 360' as we target scenes in which the camera rotates 360 degrees around a point, reduces mean-squared error by 54% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes." />
+    <meta property="og:description" content="The atmospheric and water turbulence mitigation problems have emerged as challenging inverse problems in computer vision and optics communities over the years. However, current methods either rely heavily on the quality of the training dataset or fail to generalize over various scenarios, such as static scenes, dynamic scenes, and text reconstructions. We propose a general implicit neural representation for unsupervised atmospheric and water turbulence mitigation (NeRT). NeRT leverages the implicit neural representations and the physically correct tilt-then-blur turbulence model to reconstruct the clean, undistorted image, given only dozens of distorted input images. Moreover, we show that NeRT outperforms the state-of-the-art through various qualitative and quantitative evaluations of atmospheric and water turbulence datasets. Furthermore, we demonstrate the ability of NeRT to eliminate uncontrolled turbulence from real-world environments. Lastly, we incorporate NeRT into continuously captured video sequences and demonstrate $48 \times$ speedup." />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields" />
-    <meta name="twitter:description" content="Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on 'unbounded' scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub 'mip-NeRF 360' as we target scenes in which the camera rotates 360 degrees around a point, reduces mean-squared error by 54% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes." />
+    <meta name="twitter:title" content="NeRT: Implicit Neural Representations for General
+    Unsupervised Turbulence Mitigation" />
+    <meta name="twitter:description" content="The atmospheric and water turbulence mitigation problems have emerged as challenging inverse problems in computer vision and optics communities over the years. However, current methods either rely heavily on the quality of the training dataset or fail to generalize over various scenarios, such as static scenes, dynamic scenes, and text reconstructions. We propose a general implicit neural representation for unsupervised atmospheric and water turbulence mitigation (NeRT). NeRT leverages the implicit neural representations and the physically correct tilt-then-blur turbulence model to reconstruct the clean, undistorted image, given only dozens of distorted input images. Moreover, we show that NeRT outperforms the state-of-the-art through various qualitative and quantitative evaluations of atmospheric and water turbulence datasets. Furthermore, we demonstrate the ability of NeRT to eliminate uncontrolled turbulence from real-world environments. Lastly, we incorporate NeRT into continuously captured video sequences and demonstrate $48 \times$ speedup." />
     <meta name="twitter:image" content="https://jonbarron.info/mipnerf360/img/gardenvase.jpg" />
 
 
@@ -49,7 +50,7 @@
         <div class="row">
             <h2 class="col-md-12 text-center">
                 <b>NeRT</b>: Implicit Neural Representations <br> for General
-                Unsupervised Turbulence Mitigation Anti-Aliased Neural Radiance Fields</br> 
+                Unsupervised Turbulence Mitigation</br> 
                 <small>
 								
                 </small>
@@ -91,29 +92,15 @@
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="https://arxiv.org/abs/2111.12077">
+                            <a href="https://arxiv.org/abs/2308.00622">
                             <image src="img/360_paper_image.jpg" height="60px">
                                 <h4><strong>Paper</strong></h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://youtu.be/zBSH-k9GbV4">
-                            <image src="img/youtube_icon.png" height="60px">
-                                <h4><strong>Video</strong></h4>
                             </a>
                         </li>
                         <li>
                             <a href="http://storage.googleapis.com/gresearch/refraw360/360_v2.zip" target="popup" onclick="window.open('http://storage.googleapis.com/gresearch/refraw360/360_v2.zip','popup','width=600,height=400')">
                             <image src="img/database_icon.png" height="60px">
                                 <h4><strong>Dataset Pt. 1</strong></h4>
-                            </a>							
-                        </li>
-                        <li>
-                            <a href="https://storage.googleapis.com/gresearch/refraw360/360_extra_scenes.zip
-" target="popup" onclick="window.open('https://storage.googleapis.com/gresearch/refraw360/360_extra_scenes.zip
-','popup','width=600,height=400')">
-                            <image src="img/database_icon.png" height="60px">
-                                <h4><strong>Dataset Pt. 2</strong></h4>
                             </a>							
                         </li>
                         <li>
@@ -125,8 +112,6 @@
                     </ul>
                 </div>
         </div>
-
-
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
