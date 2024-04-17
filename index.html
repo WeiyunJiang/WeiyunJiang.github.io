@@ -55,25 +55,9 @@
 
 
 
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/ConVRT_thumbnail.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
-          }
-
-          function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
-          }
-          smerf_stop()
-        </script>
+        <img src="images/NeRT.png" width=100%>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://weiyunjiang.github.io/NeRT/">
@@ -109,14 +93,14 @@
           <img src='images/ConVRT_thumbnail.png' width=100%>
         </div>
         <script type="text/javascript">
-          function smerf_start() {
+          function ConVRT_start() {
             document.getElementById('convrt_image').style.opacity = "1";
           }
 
-          function smerf_stop() {
+          function ConVRT_stop() {
             document.getElementById('convrt_image').style.opacity = "0";
           }
-          smerf_stop()
+          ConVRT_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
