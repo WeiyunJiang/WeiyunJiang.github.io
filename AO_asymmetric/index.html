@@ -116,12 +116,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h3>Abstract</h3>
+                        <h3><b>Abstract</b></h3>
                         <p class="text-justify">
                             This work introduces the first closed-loop adaptive optics (AO) system capable of optically correcting aberrations in real-time without a guidestar or a wavefront sensor. 
-                            Nearly 40 years ago, it was demonstrated that asymmetric apertures enable phase retrieval algorithms to perform fully computational wavefront sensing. 
-                            Our framework leverages asymmetric apertures and machine learning to estimate the PSF from natural scene measurements and perform optical correction using a spatial light modulator. 
-                            Our method outperforms state-of-the-art guidestar-free methods, using an order of magnitude fewer measurements and significantly less computation.
+                            Nearly 40 years ago, Cederquist et al. demonstrated that asymmetric apertures enable phase retrieval (PR) algorithms to perform fully computational wavefront sensing, albeit at a high computational cost. More recently, Chimitt et al. extended this approach with machine learning and demonstrated real-time wavefront sensing using only a single (guidestar-based) point-spread-function (PSF) measurement. 
+                            Inspired by these works, we introduce a <em>guidestar-free</em> AO framework built around asymmetric apertures and machine learning. Our approach combines three key elements: (1) an asymmetric aperture placed in the optical path that enables PR-based wavefront sensing, (2) a pair of machine learning algorithms that estimate the PSF from natural scene measurements and reconstruct phase aberrations, and (3) a spatial light modulator that performs optical correction.
+                            We experimentally validate this framework on dense natural scenes imaged through unknown obscurants. Our method outperforms state-of-the-art guidestar-free wavefront shaping methods, using an order of magnitude fewer measurements and three orders of magnitude less computation.
                         </p>
                     </div>
                 </div>
