@@ -10,9 +10,26 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
+    <style>
+      /* Added class for the yellow highlight effect */
+      .highlight {
+          background-color: #ffffd0;
+      }
+    </style>
+
+    <script>
+        // Preload images to prevent flickering on first hover
+        function start() {
+            var img1 = new Image();
+            img1.src = "images/AO_on.png";
+            var img2 = new Image();
+            img2.src = "images/AO_off.png";
+        }
+    </script>
+    
   </head>
 
-  <body>
+  <body onload="start()">
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -58,7 +75,7 @@ at Samsung Research America.
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-      <tr onmouseout="document.getElementById('ao_thumb').src='images/AO_off.png'" 
+      <tr class="highlight" onmouseout="document.getElementById('ao_thumb').src='images/AO_off.png'" 
               onmouseover="document.getElementById('ao_thumb').src='images/AO_on.png'">
               
               <td style="padding:20px;width:25%;vertical-align:middle">
@@ -97,9 +114,9 @@ at Samsung Research America.
         </a>
         <br>
         <strong>Weiyun Jiang</strong>,
-		<a href="https://www.yuhaoliu.net/">Yuhao Liu</a>,
-		<a href="https://vivekboominathan.com/">Vivek Boominathan</a>,
-		<a href="https://profiles.rice.edu/faculty/ashok-veeraraghavan">Ashok Veeraraghavan</a>
+    <a href="https://www.yuhaoliu.net/">Yuhao Liu</a>,
+    <a href="https://vivekboominathan.com/">Vivek Boominathan</a>,
+    <a href="https://profiles.rice.edu/faculty/ashok-veeraraghavan">Ashok Veeraraghavan</a>
         <br>
         <em>CVPRW</em>, 2023
         <br>
@@ -145,9 +162,9 @@ at Samsung Research America.
         </a>
         <br>
     <a href="https://www.haomingcai.com/">Haoming Cai*</a>,
-		<a href="https://codingrex.github.io/">Jingxi Chen*</a>,
-		<a href="https://brandonyfeng.github.io/">Brandon Y. Feng</a>,
-		<strong>Weiyun Jiang</strong>,
+    <a href="https://codingrex.github.io/">Jingxi Chen*</a>,
+    <a href="https://brandonyfeng.github.io/">Brandon Y. Feng</a>,
+    <strong>Weiyun Jiang</strong>,
     <a href="https://mingyangx.github.io/">Mingyang Xie</a>,
     <a href="https://kevinwzhang.com/">Kevin Zhang</a>,
     <a href="https://profiles.rice.edu/faculty/ashok-veeraraghavan">Ashok Veeraraghavan</a>,
@@ -164,7 +181,7 @@ at Samsung Research America.
         </p>
       </td>
     </tr>
-	
+  
 
             
           </tbody></table>
