@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Guidestar-Free Adaptive Optics with Asymmetric Apertures">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guidestar-Free Adaptive Optics with Asymmetric Apertures</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <style>
+    .publication-title { font-family: 'Google Sans', sans-serif; }
+    .hero { background-color: #f5f5f5; }
+    .section { padding: 3rem 1.5rem; }
+    .teaser-img { max-width: 100%; border-radius: 10px; }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Guidestar-Free Adaptive Optics with Asymmetric Apertures</h1> [cite: 1]
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Weiyun Jiang<sup>1*</sup>,</span> [cite: 2]
+            <span class="author-block">Haiyun Guo<sup>1*</sup>,</span> [cite: 6]
+            <span class="author-block">Christopher A. Metzler<sup>2</sup>,</span> [cite: 3]
+            <span class="author-block">Ashok Veeraraghavan<sup>1</sup></span> [cite: 7]
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Rice University,</span> [cite: 2, 6, 7]
+            <span class="author-block"><sup>2</sup>University of Maryland College Park</span> [cite: 4]
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/WeiyunJiang/WeiyunJiang.github.io" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="teaser_fig1.png" class="teaser-img" alt="System Overview"/>
+        <p class="content has-text-justified">
+          Our system combines asymmetric apertures with machine learning to image through severe optical aberrations 
+          without wavefront sensors or guidestars[cite: 27].
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work introduces the first closed-loop adaptive optics (AO) system capable of optically correcting 
+            aberrations in real-time without a guidestar or a wavefront sensor[cite: 31]. 
+            Inspired by recent advances in phase retrieval, we introduce a guidestar-free AO framework built around 
+            asymmetric apertures and machine learning[cite: 34]. 
+            Our approach combines an asymmetric aperture, neural networks for PSF and phase estimation, and a 
+            spatial light modulator for optical correction[cite: 35]. 
+            Experimental results show our method outperforms state-of-the-art methods using an order of magnitude 
+            fewer measurements and three orders of magnitude less computation[cite: 39].
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Breaking Ambiguity with Asymmetry</h2>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content has-text-justified">
+          <p>
+            For symmetric apertures, the phase $\phi(x,y)$ and its conjugate-flipped counterpart $\phi(-x,-y)$ 
+            produce identical PSFs, leading to ambiguity[cite: 102]. 
+            By using an <strong>asymmetric triangular aperture</strong>, we yield distinct PSFs for different wavefronts, 
+            enabling unique phase retrieval[cite: 103, 104].
+          </p>
+          <img src="method_fig2.png" alt="Symmetry Breaking Figure"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Closed-Loop AO Pipeline</h2>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <img src="pipeline_fig3.png" alt="Pipeline Overview"/>
+        <div class="content has-text-justified">
+          <ul>
+            <li><strong>PSF U-Net:</strong> Estimates the PSF from captured sensor images broken into patches[cite: 167].</li>
+            <li><strong>Phase U-Net:</strong> Reconstructs the phase aberration from the estimated PSF[cite: 192].</li>
+            <li><strong>Optical Correction:</strong> The conjugate phase $(-\hat{\phi})$ is added to the SLM to correct aberrations iteratively[cite: 153].</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Experimental Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        We validated our framework using real-world obscurants, including nail polish, onion skin, and diffusers[cite: 382]. 
+        Our method achieves high-quality image restoration with only <strong>four measurements</strong>[cite: 240].
+      </p>
+    </div>
+    <img src="results_fig10.png" alt="Real World Results"/>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{jiang2026guidestar,
+  title={Guidestar-Free Adaptive Optics with Asymmetric Apertures},
+  author={Jiang, Weiyun and Guo, Haiyun and Metzler, Christopher A. and Veeraraghavan, Ashok},
+  journal={arXiv preprint},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Website template adapted from Nerfies.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
