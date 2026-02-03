@@ -81,7 +81,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <h3>Abstract</h3>
                 <p class="text-justify">
-                    This work introduces the first closed-loop adaptive optics (AO) system capable of optically correcting aberrations in real-time without a guidestar or a wavefront sensor[cite: 31, 390]. Nearly 40 years ago, it was demonstrated that asymmetric apertures enable phase retrieval algorithms to perform fully computational wavefront sensing[cite: 32]. Inspired by this, we introduce a guidestar-free AO framework built around asymmetric apertures and machine learning[cite: 34]. Our approach combines an asymmetric aperture placed in the optical path, a pair of machine learning algorithms that estimate the PSF from natural scene measurements, and a spatial light modulator that performs optical correction[cite: 35, 38]. Our method outperforms state-of-the-art guidestar-free wavefront shaping methods, using an order of magnitude fewer measurements and three orders of magnitude less computation[cite: 39].
+                    This work introduces the first closed-loop adaptive optics (AO) system capable of optically correcting aberrations in real-time without a guidestar or a wavefront sensor. Nearly 40 years ago, it was demonstrated that asymmetric apertures enable phase retrieval algorithms to perform fully computational wavefront sensing. Inspired by this, we introduce a guidestar-free AO framework built around asymmetric apertures and machine learning. Our approach combines an asymmetric aperture placed in the optical path, a pair of machine learning algorithms that estimate the PSF from natural scene measurements, and a spatial light modulator that performs optical correction. Our method outperforms state-of-the-art guidestar-free wavefront shaping methods, using an order of magnitude fewer measurements and three orders of magnitude less computation.
                 </p>
             </div>
         </div>
@@ -91,7 +91,7 @@
                 <h3>System Overview</h3>
                 <img src="img/pipeline_fig3.png" alt="AO Pipeline" style="max-width: 100%;">
                 <p class="text-justify">
-                    Overview of our proposed closed-loop guidestar-free AO system. Light passes through an obscurant and an asymmetric aperture before reaching an SLM[cite: 148, 150]. A PSF U-Net estimates the PSF from the captured image, and a Phase U-Net predicts the phase error to drive optical correction[cite: 152, 153].
+                    Overview of our proposed closed-loop guidestar-free AO system. Light passes through an obscurant and an asymmetric aperture before reaching an SLM. A PSF U-Net estimates the PSF from the captured image, and a Phase U-Net predicts the phase error to drive optical correction.
                 </p>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 <h3>Breaking Symmetry with Asymmetric Apertures</h3>
                 <img src="img/method_fig2.png" alt="Symmetry Breaking" style="max-width: 100%;">
                 <p class="text-justify">
-                    For a circular aperture, the original phase and its conjugate-flipped counterpart produce identical PSFs, leading to ambiguity[cite: 102]. In contrast, a triangular aperture yields distinct PSFs, enabling unique phase retrieval and resolving the ambiguity[cite: 103, 104].
+                    For a circular aperture, the original phase and its conjugate-flipped counterpart produce identical PSFs, leading to ambiguity. In contrast, a triangular aperture yields distinct PSFs, enabling unique phase retrieval and resolving the ambiguity.
                 </p>
             </div>
         </div>
@@ -111,7 +111,7 @@
                 <h3>Experimental Results (Real-World Obscurants)</h3>
                 <img src="img/results_fig10.png" alt="Real World Results" style="max-width: 100%;">
                 <p class="text-justify">
-                    Experimental results through real-world obscurants: (a-b) nail polish, (c-d) onion skin, and (e-f) a 1° diffuser[cite: 438]. While symmetric apertures fail to recover fine details, the triangular aperture leads to substantial improvement in image sharpness[cite: 441].
+                    Experimental results through real-world obscurants: (a-b) nail polish, (c-d) onion skin, and (e-f) a 1° diffuser. While symmetric apertures fail to recover fine details, the triangular aperture leads to substantial improvement in image sharpness.
                 </p>
             </div>
         </div>
