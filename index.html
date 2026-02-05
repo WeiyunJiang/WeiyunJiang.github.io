@@ -15,6 +15,31 @@
       .highlight {
           background-color: #ffffd0;
       }
+
+      /* --- PASTE THIS NEW PART HERE --- */
+      @media screen and (max-width: 768px) {
+        /* Force table cells to stack vertically on mobile */
+        tbody, tr, td {
+          display: block !important;
+          width: 100% !important;
+          box-sizing: border-box;
+        }
+
+        /* Center images and make them nice and big */
+        td img, td video {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          display: block;
+          margin: 0 auto 15px auto; /* Adds space below image */
+        }
+        
+        /* Fix text alignment and padding */
+        td {
+          padding: 5px 20px !important; /* Side padding so text doesn't hit edge */
+          text-align: left;
+        }
+      }
     </style>
 
     <script>
