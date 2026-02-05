@@ -136,25 +136,19 @@ at Samsung Research America.
       </td>
     </tr>
 
-    <tr onmouseout="ConVRT_stop()" onmouseover="ConVRT_start()">
+    <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='convrt_image'><video  width=100% muted autoplay loop>
+        <video id="convrt_video" 
+              width="100%" 
+              muted 
+              loop 
+              playsinline 
+              style="border-radius: 4px; display: block;"
+              onmouseover="this.play()" 
+              onmouseout="this.pause(); this.currentTime = 0;">
           <source src="images/ConVRT.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video></div>
-          <img src='images/ConVRT_thumbnail.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function ConVRT_start() {
-            document.getElementById('convrt_image').style.opacity = "1";
-          }
-
-          function ConVRT_stop() {
-            document.getElementById('convrt_image').style.opacity = "0";
-          }
-          ConVRT_stop()
-        </script>
+        </video>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://convrt-2024.github.io/">
